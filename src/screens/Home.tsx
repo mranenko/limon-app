@@ -1,6 +1,5 @@
 import { Card } from '../components'
 import {
-  Footer,
   Header,
   Main,
   Screen,
