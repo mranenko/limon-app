@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Heebo';
+  src: url('../../assets/fonts/Heebo-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Heebo';
+  src: url('../../assets/fonts/Heebo-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../../assets/fonts/PlayfairDisplay-SemiBold.ttf') format('opentype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Lovelo';
+  src: url('../../assets/fonts/PlayfairDisplay-Bold.ttf') format('opentype');
+  font-weight: 700;
+}
+
+:root {
+  --font-family-heebo: 'Heebo', sans-serif;
+  --font-family-playfair-display: 'Playfair Display', serif;
+
+  --font-size-small: .75rem;
+  --font-size-regular: .875rem;
+  --font-size-large: 1rem;
+  --font-size-x-large: 1.125rem;
+  --font-size-xx-large: 1.75rem;
+
+  --font-weight-normal: 400;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+}

@@ -1,0 +1,129 @@
+/*
+  color functions
+*/
+
+@function contrast($color) {
+  @if (lightness($color) < 60) {
+    @return color(foreground, light);
+  }
+
+  @return color(foreground, dark);
+}
+
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+/*
+  main colors and primitive color tokens (map)
+*/
+
+$color-cocoa: #5e4b55;
+$color-lime: #387819;
+
+$colors: (
+  cocoa: (100: tint($color-cocoa, 99%),
+    200: tint($color-cocoa, 91%),
+    300: tint($color-cocoa, 82%),
+    400: tint($color-cocoa, 72%),
+    500: tint($color-cocoa, 54%),
+    600: tint($color-cocoa, 36%),
+    700: tint($color-cocoa, 18%),
+    800: $color-cocoa,
+    900: shade($color-cocoa, 18%),
+  ),
+
+  lime: (100: tint($color-lime, 99%),
+    200: tint($color-lime, 91%),
+    300: tint($color-lime, 82%),
+    400: tint($color-lime, 72%),
+    500: tint($color-lime, 54%),
+    600: tint($color-lime, 36%),
+    700: tint($color-lime, 18%),
+    800: $color-lime,
+    900: shade($color-lime, 18%),
+  ),
+);
+
+/*
+  color map accessor function
+*/
+
+@function color($keys...) {
+  $value: $colors;
+
+  @if length($keys)==1 {
+    @if nth($keys, 1) == cocoa { @return color(cocoa, 800); }
+    @else if nth($keys, 1) == lime { @return color(lime, 800); }
+  }
+
+  @each $key in $keys {
+    $value: map-get($value, $key);
+  }
+
+  @return $value;
+}
+
+/*
+  semantic color tokens
+*/
+
+$colors: map-merge($colors, (
+  background: (
+    dark: color(cocoa, 300),
+    default: color(cocoa, 200),
+    light: color(cocoa, 100),
+  ),
+  border: color(cocoa, 400),
+  foreground: (
+    dark: color(cocoa, 950),
+    default: color(cocoa, 900),
+    light: color(cocoa, 100),
+    subtle: color(cocoa, 600),
+  ),
+));
+
+/*
+  colors as css variables
+*/
+
+:root {
+  --color-cocoa: #{color(cocoa)};
+  --color-lime: #{color(lime)};
+
+  --color-cocoa-100: #{color(cocoa, 100)};
+  --color-cocoa-200: #{color(cocoa, 200)};
+  --color-cocoa-300: #{color(cocoa, 300)};
+  --color-cocoa-400: #{color(cocoa, 400)};
+  --color-cocoa-500: #{color(cocoa, 500)};
+  --color-cocoa-600: #{color(cocoa, 600)};
+  --color-cocoa-700: #{color(cocoa, 700)};
+  --color-cocoa-800: #{color(cocoa, 800)};
+  --color-cocoa-900: #{color(cocoa, 900)};
+
+  --color-lime-100: #{color(lime, 100)};
+  --color-lime-200: #{color(lime, 200)};
+  --color-lime-300: #{color(lime, 300)};
+  --color-lime-400: #{color(lime, 400)};
+  --color-lime-500: #{color(lime, 500)};
+  --color-lime-600: #{color(lime, 600)};
+  --color-lime-700: #{color(lime, 700)};
+  --color-lime-800: #{color(lime, 800)};
+  --color-lime-900: #{color(lime, 900)};
+
+  --color-primary: #{color(cocoa, 800)};
+  --color-primary-dark: #{color(cocoa, 900)};
+  --color-accent: #{color(lime, 800)};
+  --color-accent-dark: #{color(lime, 900)};
+  --color-background: #{color(background, default)};
+  --color-background-dark: #{color(background, dark)};
+  --color-background-light: #{color(background, light)};
+  --color-foreground: #{color(foreground, default)};
+  --color-foreground-dark: #{color(foreground, dark)};
+  --color-foreground-light: #{color(foreground, light)};
+  --color-foreground-subtle: #{color(foreground, subtle)};
+}

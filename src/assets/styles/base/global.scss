@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+
+html {
+  font: normal 16px sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  background: var(--color-primary-dark);
+  color: var(--color-foreground-light);
+  display: flex;
+  flex-direction: row;
+  font-family: var(--font-family-heebo);
+  font-size: var(--font-size-regular);
+  font-weight: var(--font-weight-normal);
+  justify-content: center;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, .title, .subtitle {
+  font-family: var(--font-family-playfair-display);
+  line-height: 1.25;
+}
