@@ -1,3 +1,7 @@
+interface CartItem extends MenuItem {
+  quantity: number;
+}
+
 interface MenuCategory {
   id: number;
   title: string;
@@ -8,11 +12,11 @@ interface MenuItem {
   description: string;
   id: number;
   price: number;
-  quantity: number;
   title: string;
 }
 
 export type {
+  CartItem,
   MenuCategory,
   MenuItem,
 }

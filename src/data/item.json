@@ -1,7 +1,8 @@
 {
-  "categoryId": "1",
+  "categoryId": 1,
   "description": "Experience the freshness of Mexico with our Guacamole Fresco served alongside crispy homemade tortilla chips. Mashed avocados, diced tomatoes, onions, cilantro, and a squeeze of lime come together to create a creamy and zesty dip that's bursting with flavor. Pair it with our crunchy tortilla chips for the ultimate appetizer sensation.",
-  "id": "101",
-  "price": "10",
+  "id": 101,
+  "price": 12,
+  "quantity": 1,
   "title": "Guacamole Fresco with Homemade Tortilla Chips"
 }

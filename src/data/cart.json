@@ -1,38 +1,18 @@
-{
-  "appetizers": [
-    {
-      "title": "Guacamole Fresco with Homemade Tortilla Chips",
-      "description": "Experience the freshness of Mexico with our Guacamole Fresco served alongside crispy homemade tortilla chips. Mashed avocados, diced tomatoes, onions, cilantro, and a squeeze of lime come together to create a creamy and zesty dip that's bursting with flavor. Pair it with our crunchy tortilla chips for the ultimate appetizer sensation."
-    },
-    {
-      "title": "Tamales de Pollo",
-      "description": "Treat your taste buds to a taste of Mexico with our Tamales de Pollo. Handcrafted masa dough stuffed with tender shredded chicken, seasoned to perfection with traditional spices, and wrapped in corn husks. Steamed to perfection and served with a side of tangy salsa verde, each bite is a burst of authentic Mexican flavors."
-    },
-    {
-      "title": "Queso Fundido con Chorizo",
-      "description": "Dive into a pool of melted cheese heaven with our Queso Fundido con Chorizo. This decadent blend of gooey melted cheese and spicy chorizo sausage is served bubbling hot, creating a symphony of flavors that dance on your palate. Scoop up this indulgent delight with warm tortillas for a truly authentic Mexican experience."
-    },
-    {
-      "title": "Ceviche Tostadas",
-      "description": "Transport your taste buds to the sunny shores of Mexico with our Ceviche Tostadas. Fresh fish marinated in tangy lime juice, mixed with diced onions, tomatoes, cilantro, and jalapeños, piled high on crispy tostada shells. Each bite is a refreshing burst of citrusy flavors with a hint of heat, making it the perfect appetizer to kick off your meal."
-    },
-    {
-      "title": "Elote Asado",
-      "description": "Experience the essence of Mexican street food with our Elote Asado. Grilled corn on the cob slathered with a savory blend of mayo, cotija cheese, chili powder, and fresh lime juice. Each bite is a symphony of smoky, tangy, and creamy flavors that will transport you to the bustling markets of Mexico City."
-    }
-  ],
-  "soups": [
-    {
-      "title": "Sopa de Tortilla",
-      "description": "Dive into a bowl of traditional Mexican comfort with our Sopa de Tortilla. Rich, savory broth infused with roasted tomatoes, onions, garlic, and spices, filled with tender shredded chicken, crispy tortilla strips, creamy avocado, and tangy lime. This soul-warming soup is a fiesta of flavors that will transport you straight to the heart of Mexico."
-    },
-    {
-      "title": "Pozole Rojo",
-      "description": "Experience the bold flavors of Mexico with our Pozole Rojo. A hearty soup made with tender pork or chicken, simmered to perfection in a flavorful broth of dried chilies, garlic, and hominy. Topped with crunchy shredded cabbage, radishes, diced onions, and a squeeze of lime, each spoonful is a symphony of spicy, savory, and tangy notes."
-    },
-    {
-      "title": "Caldo de Res",
-      "description": "Warm your soul with the comforting taste of home-cooked goodness with our Caldo de Res. Slow-simmered beef broth infused with tender chunks of beef, hearty vegetables like carrots, potatoes, and zucchini, seasoned with Mexican spices and fresh herbs. Served piping hot, this wholesome soup is a delicious and satisfying meal on its own."
-    }
-  ]
-}
+[
+  {
+    "categoryId": 1,
+    "description": "Experience the freshness of Mexico with our Guacamole Fresco served alongside crispy homemade tortilla chips. Mashed avocados, diced tomatoes, onions, cilantro, and a squeeze of lime come together to create a creamy and zesty dip that's bursting with flavor. Pair it with our crunchy tortilla chips for the ultimate appetizer sensation.",
+    "id": 101,
+    "price": 12,
+    "quantity": 1,
+    "title": "Guacamole Fresco with Homemade Tortilla Chips"
+  },
+  {
+    "categoryId": 3,
+    "description": "Dive into a bowl of traditional Mexican comfort with our Sopa de Tortilla. Rich, savory broth infused with roasted tomatoes, onions, garlic, and spices, filled with tender shredded chicken, crispy tortilla strips, creamy avocado, and tangy lime. This soul-warming soup is a fiesta of flavors that will transport you straight to the heart of Mexico.",
+    "id": 301,
+    "price": 8,
+    "quantity": 2,
+    "title": "Sopa de Tortilla"
+  }
+]
