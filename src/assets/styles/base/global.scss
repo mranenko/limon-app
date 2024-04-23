@@ -10,6 +10,12 @@ html,
 body,
 #root {
   min-height: 100vh;
+  width: 100%;
+}
+
+#root {
+  max-width: 60rem;
+  min-width: 20rem;
 }
 
 html {
@@ -18,6 +24,7 @@ html {
 }
 
 body {
+  align-items: center;
   background: var(--color-primary-dark);
   color: var(--color-foreground-light);
   display: flex;
