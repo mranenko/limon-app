@@ -1,11 +1,12 @@
 interface FooterProps {
+  children: React.ReactNode
   className?: string
 }
 
-const Footer = ({ className = '' }: FooterProps) => {
+const Footer = ({ children, className = '' }: FooterProps) => {
   return (
     <footer className={`footer ${className}`}>
-      Footer
+      {children}
     </footer>
   )
 }

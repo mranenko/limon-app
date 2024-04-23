@@ -21,7 +21,7 @@ npm install
 npm start
 ```
 
-Open the browser at [localhost:5302](http://localhost:5302)
+Open your browser at [localhost:5302](http://localhost:5302)
 
 Note: This project was developed using node 20.12.2 and npm 10.5.0.
 
@@ -45,3 +45,12 @@ The following dependencies were added:
 npm install --save-dev react-router-dom sass
 npm install @phosphor-icons/react
 ```
+
+### Screen order
+
+1. Home
+1a. Details
+2. Review
+3. Checkout
+4. Payment
+5. Confirmation
