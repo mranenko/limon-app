@@ -6,6 +6,7 @@ import {
 import {
   Button,
 } from '../components'
+import item from '../data/item.json'
 import {
   Footer,
   Header,
@@ -14,13 +15,15 @@ import {
 } from '../layouts'
 
 const Details = () => {
+  const menuItem = item;
+
   return (
     <Screen>
       <Header />
       <Main>
         <section className='flex-column gap-1'>
-          <h2 className='subtitle'>Item title</h2>
-          <p>Item description</p>
+          <h1 className='title'>{menuItem.title}</h1>
+          <p>{menuItem.description}</p>
         </section>
       </Main>
       <Footer>
