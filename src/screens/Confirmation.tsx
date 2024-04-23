@@ -1,8 +1,10 @@
 import {
   ArrowLeft,
 } from '@phosphor-icons/react'
-import { Link } from 'react-router-dom'
 
+import {
+  Button,
+} from '../components'
 import {
   Footer,
   Header,
@@ -20,9 +22,9 @@ const Confirmation = () => {
         </section>
       </Main>
       <Footer>
-        <Link to='/'>
+        <Button as='a' href='/' variant='accent icon link'>
           <i><ArrowLeft /></i>
-        </Link>
+        </Button>
       </Footer>
     </Screen>
   )

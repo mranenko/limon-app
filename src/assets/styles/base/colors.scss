@@ -26,6 +26,10 @@ $color-cocoa: #5e4b55;
 $color-lime: #387819;
 
 $colors: (
+  main: (cocoa: $color-cocoa,
+    lime: $color-lime,
+  ),
+
   cocoa: (100: tint($color-cocoa, 99%),
     200: tint($color-cocoa, 91%),
     300: tint($color-cocoa, 82%),
@@ -34,7 +38,7 @@ $colors: (
     600: tint($color-cocoa, 36%),
     700: tint($color-cocoa, 18%),
     800: $color-cocoa,
-    900: shade($color-cocoa, 18%),
+    900: shade($color-cocoa, 9%),
   ),
 
   lime: (100: tint($color-lime, 99%),
@@ -57,8 +61,13 @@ $colors: (
   $value: $colors;
 
   @if length($keys)==1 {
-    @if nth($keys, 1) == cocoa { @return color(cocoa, 800); }
-    @else if nth($keys, 1) == lime { @return color(lime, 800); }
+    @if nth($keys, 1)==cocoa {
+      @return color(cocoa, 800);
+    }
+
+    @else if nth($keys, 1)==lime {
+      @return color(lime, 800);
+    }
   }
 
   @each $key in $keys {
@@ -68,24 +77,25 @@ $colors: (
   @return $value;
 }
 
+@function colors($key) {
+  @return map-get($colors, $key);
+}
+
 /*
   semantic color tokens
 */
 
-$colors: map-merge($colors, (
-  background: (
-    dark: color(cocoa, 300),
-    default: color(cocoa, 200),
-    light: color(cocoa, 100),
-  ),
-  border: color(cocoa, 400),
-  foreground: (
-    dark: color(cocoa, 950),
-    default: color(cocoa, 900),
-    light: color(cocoa, 100),
-    subtle: color(cocoa, 600),
-  ),
-));
+$colors: map-merge($colors, (background: (dark: color(cocoa, 300),
+        default: color(cocoa, 200),
+        light: color(cocoa, 100),
+      ),
+      border: color(cocoa, 400),
+      foreground: (dark: color(cocoa, 950),
+        default: color(cocoa, 900),
+        light: color(cocoa, 100),
+        subtle: color(cocoa, 600),
+      ),
+    ));
 
 /*
   colors as css variables

@@ -1,3 +1,11 @@
+import {
+  Basket,
+} from '@phosphor-icons/react'
+
+import {
+  Button,
+} from '../components'
+
 interface HeaderProps {
   className?: string
 }
@@ -5,7 +13,9 @@ interface HeaderProps {
 const Header = ({ className = '' }: HeaderProps) => {
   return (
     <div className={`header ${className}`}>
-      Header
+      <Button as='a' href='/review' variant='icon'>
+        <Basket />
+      </Button>
     </div>
   )
 }

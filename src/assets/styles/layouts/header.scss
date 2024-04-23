@@ -1,6 +1,10 @@
 .header {
+  align-items: center;
   background: var(--color-primary);
   color: var(--color-foreground-light);
   bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 2rem;
 }

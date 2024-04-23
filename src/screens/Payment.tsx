@@ -2,7 +2,6 @@ import {
   ArrowLeft,
   ArrowRight,
 } from '@phosphor-icons/react'
-import { Link } from 'react-router-dom'
 
 import {
   Button,
@@ -24,9 +23,9 @@ const Payment = () => {
         </section>
       </Main>
       <Footer>
-        <Link to='/checkout'>
+        <Button as='a' href='/checkout' variant='accent icon link'>
           <i><ArrowLeft /></i>
-        </Link>
+        </Button>
         <Button as='a' href='/confirmation' variant='accent solid'>
           Place Order
           <i><ArrowRight /></i>
