@@ -1,5 +1,7 @@
-import { Button } from './Button'
-import { Card } from './Card'
+import {
+  Button,
+  Card,
+} from './common'
 
 export {
   Button,

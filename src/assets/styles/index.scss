@@ -2,8 +2,10 @@
 @use 'base/fonts';
 @use 'base/global';
 @use 'base/utilities';
-@use 'components/button';
-@use 'components/card';
+
+@use 'components/common/button';
+@use 'components/common/card';
+
 @use 'layouts/footer';
 @use 'layouts/header';
 @use 'layouts/main';
