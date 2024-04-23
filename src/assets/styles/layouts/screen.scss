@@ -1,7 +1,15 @@
 .screen {
   background: var(--color-background);
   color: var(--color-foreground);
+  max-width: 60rem;
   min-height: 100vh;
+  min-width: 20rem;
   position: relative;
   width: 100%;
+}
+
+.screen.confirmation .main {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }

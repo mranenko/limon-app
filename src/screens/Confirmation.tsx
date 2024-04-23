@@ -14,11 +14,14 @@ import {
 
 const Confirmation = () => {
   return (
-    <Screen>
+    <Screen className='confirmation'>
       <Header />
       <Main>
         <section className='flex-column gap-1'>
           <h2 className='subtitle'>Thank You</h2>
+          <p>Your estimated delivery time is:</p>
+          <h3>6:15 pm</h3>
+          <p>See you soon!</p>
         </section>
       </Main>
       <Footer variant='start'>

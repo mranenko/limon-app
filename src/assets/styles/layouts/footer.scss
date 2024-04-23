@@ -5,8 +5,10 @@
   bottom: 0;
   display: flex;
   flex-direction: row;
+  height: 7rem;
   justify-content: space-between;
   max-width: 60rem;
+  min-width: 20rem;
   padding: 2rem;
   position: fixed;
   width: 100%;

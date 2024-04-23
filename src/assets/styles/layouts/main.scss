@@ -1,4 +1,11 @@
 .main {
-  padding: 2rem 2rem 9rem;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  display: flex;
+  flex-direction: column;
+  max-width: 60rem;
+  min-height: 100vh;
+  min-width: 20rem;
+  padding: 9rem 2rem;
   width: 100%;
 }
