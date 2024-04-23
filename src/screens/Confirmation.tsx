@@ -21,7 +21,7 @@ const Confirmation = () => {
           <h2 className='subtitle'>Thank You</h2>
         </section>
       </Main>
-      <Footer>
+      <Footer variant='start'>
         <Button as='a' href='/' variant='accent icon link'>
           <i><ArrowLeft /></i>
         </Button>

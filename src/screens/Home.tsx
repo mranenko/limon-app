@@ -50,7 +50,7 @@ const Home = () => {
           </div>
         </section>
       </Main>
-      <Footer>
+      <Footer variant='end'>
         <Button as='a' href='/review' variant='accent solid'>
           Review Order
           <i><ArrowRight /></i>
