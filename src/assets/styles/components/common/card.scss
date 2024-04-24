@@ -1,10 +1,16 @@
 .card {
-  background: var(--color-background-dark);
+  background: var(--color-background-light);
   border-radius: .5rem;
+  color: var(--color-foreground);
   display: flex;
   flex-direction: column;
   gap: .75rem;
   padding: 1.5rem;
+}
+
+.card.primary {
+  background: var(--color-primary);
+  color: var(--color-foreground-light);
 }
 
 .cards {
