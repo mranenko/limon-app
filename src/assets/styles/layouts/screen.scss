@@ -1,5 +1,8 @@
+@use '../base/colors' as *;
+
 .screen {
   background: var(--color-background);
+  box-shadow: 0 0 1rem rgba(shade(color(cocoa), 40%), .8);
   color: var(--color-foreground);
   max-width: 60rem;
   min-height: 100vh;
