@@ -15,4 +15,9 @@ header,
   position: fixed;
   top: 0;
   width: 100%;
+
+  .logo img {
+    height: 4rem;
+    width: auto;
+  }
 }

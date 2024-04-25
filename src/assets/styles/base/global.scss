@@ -1,3 +1,5 @@
+@use './colors' as *;
+
 *,
 *::after,
 *::before {
@@ -25,7 +27,7 @@ html {
 
 body {
   align-items: center;
-  background: var(--color-primary-dark);
+  background: shade(color(cocoa), 30%);
   color: var(--color-foreground-light);
   display: flex;
   flex-direction: row;
