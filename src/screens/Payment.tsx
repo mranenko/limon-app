@@ -2,11 +2,9 @@ import {
   ArrowLeft,
   ArrowRight,
 } from '@phosphor-icons/react'
+import { NavLink } from 'react-router-dom'
 
-import {
-  Button,
-  Card,
-} from '../components'
+import { Card } from '../components'
 import {
   Footer,
   Header,
@@ -44,13 +42,13 @@ const Payment = () => {
         </section>
       </Main>
       <Footer>
-        <Button as='a' href='/checkout' variant='accent icon link'>
+        <NavLink to='/checkout' className='button accent icon link'>
           <i><ArrowLeft /></i>
-        </Button>
-        <Button as='a' href='/confirmation' variant='accent solid'>
+        </NavLink>
+        <NavLink to='/confirmation' className='button accent solid'>
           Place Order
           <i><ArrowRight /></i>
-        </Button>
+        </NavLink>
       </Footer>
     </Screen>
   )

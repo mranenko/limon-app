@@ -2,10 +2,8 @@ import {
   ArrowLeft,
   ArrowRight,
 } from '@phosphor-icons/react'
+import { NavLink } from 'react-router-dom'
 
-import {
-  Button,
-} from '../components'
 import {
   Footer,
   Header,
@@ -23,13 +21,13 @@ const Checkout = () => {
         </section>
       </Main>
       <Footer>
-        <Button as='a' href='/review' variant='accent icon link'>
+        <NavLink to='/review' className='button accent icon link'>
           <i><ArrowLeft /></i>
-        </Button>
-        <Button as='a' href='/payment' variant='accent solid'>
+        </NavLink>
+        <NavLink to='/payment' className='button accent solid'>
           Continue
           <i><ArrowRight /></i>
-        </Button>
+        </NavLink>
       </Footer>
     </Screen>
   )

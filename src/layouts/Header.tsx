@@ -1,8 +1,7 @@
 import {
   Basket,
 } from '@phosphor-icons/react'
-
-import { Button } from '../components'
+import { NavLink } from 'react-router-dom'
 
 interface HeaderProps {
   className?: string
@@ -14,9 +13,11 @@ const Header = ({ className = '' }: HeaderProps) => {
       <a className='logo' href='/'>
         <img src='/assets/images/logos/limon-logo-light.svg' alt='Limon Logo' />
       </a>
-      <Button as='a' href='/review' variant='icon'>
-        <Basket />
-      </Button>
+      <nav>
+        <NavLink to='/review' className='button icon'>
+          <Basket />
+        </NavLink>
+      </nav>
     </div>
   )
 }

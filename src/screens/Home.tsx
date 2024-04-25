@@ -1,7 +1,7 @@
 import {
   ArrowRight,
 } from '@phosphor-icons/react'
-import { NavLink } from "react-router-dom"
+import { NavLink } from 'react-router-dom'
 
 import { ItemMenu } from '../components'
 import {
