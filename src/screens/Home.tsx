@@ -1,11 +1,9 @@
 import {
   ArrowRight,
 } from '@phosphor-icons/react'
+import { NavLink } from "react-router-dom"
 
-import {
-  Button,
-  ItemMenu,
-} from '../components'
+import { ItemMenu } from '../components'
 import {
   Footer,
   Header,
@@ -21,10 +19,10 @@ const Home = () => {
         <ItemMenu className='flex-column gap-1' />
       </Main>
       <Footer variant='end'>
-        <Button as='a' href='/review' variant='accent solid'>
+        <NavLink to='/review' className='button accent solid'>
           Review Order
           <i><ArrowRight /></i>
-        </Button>
+        </NavLink>
       </Footer>
     </Screen>
   )
