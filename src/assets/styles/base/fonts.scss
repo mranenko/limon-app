@@ -29,10 +29,18 @@
   --font-size-small: .75rem;
   --font-size-regular: .875rem;
   --font-size-large: 1rem;
-  --font-size-x-large: 1.125rem;
-  --font-size-xx-large: 1.75rem;
+  --font-size-x-large: 1.25rem;
+  --font-size-xx-large: 1.625rem;
+  --font-size-xxx-large: 2rem;
 
   --font-weight-normal: 400;
-  --font-weight-semi-bold: 600;
+  --font-weight-semibold: 600;
   --font-weight-bold: 700;
+
+  --leading-normal: 1.5;
+  --leading-tight: 1.25;
+  --leading-x-tight: 1.125;
+
+  --tracking-normal: 0;
+  --tracking-wide: .5px;
 }

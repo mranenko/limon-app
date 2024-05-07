@@ -3,7 +3,7 @@
 */
 
 @function contrast($color) {
-  @if (lightness($color) < 60) {
+  @if (lightness($color) < 64) {
     @return color(foreground, light);
   }
 
@@ -22,32 +22,35 @@
   main colors and primitive color tokens (map)
 */
 
-$color-cocoa: #5e4b55;
-$color-lime: #387819;
+$color-cocoa: #62545c;
+$color-lime: #436d43;
 
 $colors: (
-  main: (cocoa: $color-cocoa,
+  main: (
+    cocoa: $color-cocoa,
     lime: $color-lime,
   ),
 
-  cocoa: (100: tint($color-cocoa, 99%),
-    200: tint($color-cocoa, 91%),
-    300: tint($color-cocoa, 82%),
-    400: tint($color-cocoa, 72%),
-    500: tint($color-cocoa, 54%),
-    600: tint($color-cocoa, 36%),
-    700: tint($color-cocoa, 18%),
+  cocoa: (
+    100: tint($color-cocoa, 99.5%),
+    200: tint($color-cocoa, 92%),
+    300: tint($color-cocoa, 84%),
+    400: tint($color-cocoa, 76%),
+    500: tint($color-cocoa, 57%),
+    600: tint($color-cocoa, 38%),
+    700: tint($color-cocoa, 19%),
     800: $color-cocoa,
-    900: shade($color-cocoa, 9%),
+    900: shade($color-cocoa, 18%),
   ),
 
-  lime: (100: tint($color-lime, 99%),
-    200: tint($color-lime, 91%),
-    300: tint($color-lime, 82%),
-    400: tint($color-lime, 72%),
-    500: tint($color-lime, 54%),
-    600: tint($color-lime, 36%),
-    700: tint($color-lime, 18%),
+  lime: (
+    100: tint($color-lime, 99.5%),
+    200: tint($color-lime, 92%),
+    300: tint($color-lime, 84%),
+    400: tint($color-lime, 76%),
+    500: tint($color-lime, 57%),
+    600: tint($color-lime, 38%),
+    700: tint($color-lime, 19%),
     800: $color-lime,
     900: shade($color-lime, 18%),
   ),
@@ -61,13 +64,8 @@ $colors: (
   $value: $colors;
 
   @if length($keys)==1 {
-    @if nth($keys, 1)==cocoa {
-      @return color(cocoa, 800);
-    }
-
-    @else if nth($keys, 1)==lime {
-      @return color(lime, 800);
-    }
+    @if nth($keys, 1) == cocoa { @return color(cocoa, 800); }
+    @else if nth($keys, 1) == lime { @return color(lime, 800); }
   }
 
   @each $key in $keys {
@@ -85,17 +83,20 @@ $colors: (
   semantic color tokens
 */
 
-$colors: map-merge($colors, (background: (dark: color(cocoa, 300),
-        default: color(cocoa, 200),
-        light: color(cocoa, 100),
-      ),
-      border: color(cocoa, 400),
-      foreground: (dark: color(cocoa, 950),
-        default: color(cocoa, 900),
-        light: color(cocoa, 100),
-        subtle: color(cocoa, 600),
-      ),
-    ));
+$colors: map-merge($colors, (
+  background: (
+    dark: color(cocoa, 300),
+    default: color(cocoa, 200),
+    light: color(cocoa, 100),
+  ),
+  border: color(cocoa, 300),
+  foreground: (
+    dark: color(cocoa, 950),
+    default: color(cocoa, 900),
+    light: color(cocoa, 100),
+    subtle: color(cocoa, 600),
+  ),
+));
 
 /*
   colors as css variables

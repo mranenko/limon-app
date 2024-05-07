@@ -1,5 +1,3 @@
-@use './colors' as *;
-
 *,
 *::after,
 *::before {
@@ -27,7 +25,7 @@ html {
 
 body {
   align-items: center;
-  background: shade(color(cocoa), 30%);
+  background: var(--color-cocoa-900);
   color: var(--color-foreground-light);
   display: flex;
   flex-direction: row;
@@ -46,5 +44,25 @@ a {
 
 h1, h2, h3, h4, h5, h6, .title, .subtitle {
   font-family: var(--font-family-playfair-display);
-  line-height: 1.25;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--leading-tight);
+}
+h1, h2, .title, .subtitle {
+  font-weight: var(--font-weight-semibold);
+}
+h1, .title {
+  font-size: var(--font-size-xxx-large);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--tracking-normal);
+  line-height: var(--leading-x-tight);
+}
+h2, .subtitle {
+  font-size: var(--font-size-xx-large);
+  font-weight: var(--font-weight-semibold);
+}
+h3 { font-size: var(--font-size-x-large); }
+h4, h5, h6 { font-size: var(--font-size-large); }
+
+strong, .strong {
+  font-weight: var(--font-weight-semibold);
 }
