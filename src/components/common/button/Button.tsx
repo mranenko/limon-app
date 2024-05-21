@@ -1,3 +1,5 @@
+import './Button.scss'
+
 interface ButtonProps {
   as?: React.ElementType
   children: React.ReactNode

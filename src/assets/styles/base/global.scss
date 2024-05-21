@@ -1,3 +1,7 @@
+/*
+  reset
+*/
+
 *,
 *::after,
 *::before {
@@ -5,6 +9,10 @@
   margin: 0;
   padding: 0;
 }
+
+/*
+  page
+*/
 
 html,
 body,
@@ -35,6 +43,10 @@ body {
   justify-content: center;
 }
 
+/*
+  links
+*/
+
 a {
   color: inherit;
   cursor: pointer;
@@ -62,6 +74,34 @@ h2, .subtitle {
 }
 h3 { font-size: var(--font-size-x-large); }
 h4, h5, h6 { font-size: var(--font-size-large); }
+
+/*
+  inputs
+*/
+
+input[type='text'],
+input.text,
+textarea,
+textarea.text {
+  background: var(--color-background);
+  border: 0;
+  border-radius: .375rem;
+  color: var(--color-foreground);
+  font: inherit;
+  padding: .5rem .75rem;
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: .1875rem;
+  width: 100%;
+}
+
+/*
+  text
+*/
 
 strong, .strong {
   font-weight: var(--font-weight-semibold);

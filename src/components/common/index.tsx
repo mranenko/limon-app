@@ -1,5 +1,5 @@
-import { Button } from './Button'
-import { Card } from './Card'
+import { Button } from './button'
+import { Card } from './card'
 
 export {
   Button,
