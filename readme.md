@@ -23,7 +23,7 @@ npm start
 
 Open your browser at [localhost:5302](http://localhost:5302)
 
-Note: This project was developed using node 22.2.0 and npm 10.7.0.
+Note: This project uses node 22.3.0 and npm 10.8.1.
 
 ---
 
@@ -48,9 +48,11 @@ npm install @phosphor-icons/react
 
 ### Screen order
 
+```
 1. Home
-1a. Details
+  1a. Details
 2. Review
 3. Checkout
 4. Payment
 5. Confirmation
+```
